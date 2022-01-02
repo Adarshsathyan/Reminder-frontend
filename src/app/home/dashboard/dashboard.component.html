@@ -1,0 +1,35 @@
+<div class="row col-md-12">
+    
+    <div class="col-md-2">
+        <app-sidenav></app-sidenav>
+    </div>
+    <div class="col-md-8 ">
+       <app-home *ngIf="router.url === '/home'"></app-home>
+       <app-events *ngIf="router.url === '/home/events'"></app-events>
+    </div>
+    <div class="col-md-2">
+        <div class="container">
+            <div class="p-4 " >
+                <div class="dropdown float-end" >
+                  <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://mpng.subpng.com/20180128/yvw/kisspng-ninja-ico-icon-black-ninja-5a6dee087cdc18.5588411915171538005114.jpg" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Adarsh</strong>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">New project...</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                  </ul>
+                </div>
+            </div>
+            <!-- <div class="bg-info container  mt-5">
+               <app-calender></app-calender>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- <ngx-spinner bdColor="rgba(51, 51, 51, 0.8)" size="default" type="ball-spin-clockwise">  
+  <p style="color: white">Please Wait. </p>  
+  </ngx-spinner>    -->

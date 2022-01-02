@@ -1,0 +1,10 @@
+table {
+    width: 100%;
+   
+  }
+  .mat-row .mat-cell {
+    border-bottom: 1px solid rgb(228, 224, 224);
+    border-top: 1px solid transparent;
+    
+
+  }
